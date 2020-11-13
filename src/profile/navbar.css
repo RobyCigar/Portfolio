@@ -1,0 +1,26 @@
+.navbar {
+	height: 4em;
+	background-color: #003049;
+	display: flex;
+	justify-content: right;
+	font-family: 'Poppins', sans-serif;
+	font-size: 15px;
+}
+
+.navbar > ul {
+	display: flex;
+	list-style: none;
+	margin: auto 20px;
+}
+
+.navbar > ul > li > a {
+	text-decoration: none;
+	color: white;
+	padding: 20px;
+	letter-spacing: 2px;
+} 
+
+.navbar > ul > li > a:hover {
+	color: #eae2b7;
+} 
+

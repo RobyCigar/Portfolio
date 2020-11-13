@@ -1,0 +1,36 @@
+.foot-container {
+	height: 20rem;
+	background-color: #293241;
+	color: white;
+}
+
+.touch {
+	display: block;
+	margin-left: 3rem;
+	padding: 1em 0 1em 0;
+	font-size: 40px;
+	text-align: left;
+	font-family: 'Poppins', sans-serif;
+}
+
+.socmed-container {
+	display: inline-flex;	
+}
+
+.socmed {
+	display: flex;
+	flex-direction: column;
+	margin-left: 3rem;
+	width: min-content;
+}
+
+.socmed > svg {
+	margin-bottom: 15px;
+}
+
+.datas > div {
+	margin: 0.5em auto 1.5em 2em;
+	font-family: 'Questrial', sans-serif;
+}
+
+
