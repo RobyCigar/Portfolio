@@ -1,6 +1,6 @@
 .navbar {
 	height: 4em;
-	background-color: #003049;
+	background-color: #4d194d;
 	display: flex;
 	justify-content: right;
 	font-family: 'Poppins', sans-serif;
@@ -15,12 +15,12 @@
 
 .navbar > ul > li > a {
 	text-decoration: none;
-	color: white;
 	padding: 20px;
 	letter-spacing: 2px;
+	color: #e0fbfc;
 } 
 
 .navbar > ul > li > a:hover {
-	color: #eae2b7;
+	color: #efd3d7;
 } 
 

@@ -1,6 +1,6 @@
 import React from 'react';
-import styles from './content.css';
-import profile from '../assets/Frame 1.png';
+import styles from './content.module.css';
+import face from '../assets/face.png';
 import html from '../assets/HTML.png';
 import css from '../assets/CSS.png';
 import js from '../assets/JS.png';
@@ -8,29 +8,27 @@ import bs from '../assets/BS.png';
 import rc from '../assets/RC.png';
 import gh from '../assets/GH.png';
 
+class Content extends React.Component {
+  render() {
+    return (
 
-const Profile = () => {
-	return(
-		<div className="profile">
-			<img src={profile} alt="my-profile" className="profile-pic"></img>
-			<div className="bio-container">
-				<div className="bio">
-					<p className="bio-jumbo">Hi, I'm Roby</p>
-					<p className="bio-intro">I'm currently first semester in Management Informathics at AMIKOM, a well known private college for Computer Science major in Indonesia.</p>
-					<p className="bio-interest">Interested In</p>
-					<p className="bio-flex"> Frontend - Science - Money</p>
-				</div>
-			</div>
+    	<>
+
+		<div className={styles.profile}>
+			<img src={face} alt="my-profile" className={styles.face}></img>
+			<p className={styles.jumbo}>Hi, you can call me Roby</p>
+			<p className={styles.intro}>
+				🌏 I have a dream to become a frontend dev and work in foreign country <br />
+				🖥 I’m interested in learning new frontend technology <br />
+				🔥 2021 Goals is Working as a freelance <br />
+				🏃 I do parkour for sport
+			</p>
 		</div>
-	)
-}
 
 
-const Tools = () => {
-	return(
-		<div className="tools-container">
+		<div className={styles.container}>
 			<p className="tools-p">Tools</p>
-			<ul className="tools-ul">
+			<ul className={styles.ul}>
 				<li>
 					<img src={html} alt="html"></img>
 				</li>
@@ -51,17 +49,7 @@ const Tools = () => {
 				</li>
 			</ul>
 		</div>
-	)
-}
-
-
-class Content extends React.Component {
-  render() {
-    return (
-    	<div id="content">
-    		<Profile />
-    		<Tools />
-    	</div>
+    	</>
     )	
   }
 }
