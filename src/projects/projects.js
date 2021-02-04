@@ -1,26 +1,20 @@
-import React from 'react';
-import styles from './projects.css';
-import data from '.././data.js';
+import React, { useState, useEffect, useRef } from "react"
+import { motion, useMotionValue, useSpring } from "framer-motion"
+import styles from "./projects.module.css"
+import face from './face.png'
 
-class Projects extends React.Component {
-  render() {
-  	let projects = data.projects;
-  	return (
-  		<>
-  			<div className="proj-container">
-  				<p classNamee="proj-total"> Projects ({projects.length})</p>
-  				<div className="cards-container">
-  					{projects.map(project => {
-  						return <div className="card">
-  											<h1>{project.title}</h1>
-  											<p>{project.desc}</p>
-  									 </div>
-  					})}
-  				</div>
-  			</div>
-  		</>
-  	)
-  }
+
+const Anim = () => {
+
+  return (
+    <>
+      <div className={styles.container}>
+
+
+        
+      </div>
+    </>
+  )
 }
 
-export default Projects;
+export default Anim;

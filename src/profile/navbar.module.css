@@ -1,6 +1,8 @@
 .navbar {
+	position: absolute;
+	top: 0;
+	right: 0;
 	height: 4em;
-	background-color: #4d194d;
 	display: flex;
 	justify-content: right;
 	font-family: 'Poppins', sans-serif;
@@ -11,6 +13,7 @@
 	display: flex;
 	list-style: none;
 	margin: auto 20px;
+	z-index: 100;
 }
 
 .navbar > ul > li > a {
@@ -18,9 +21,14 @@
 	padding: 20px;
 	letter-spacing: 2px;
 	color: #e0fbfc;
+	-webkit-transition: all .5s ;
+	   -moz-transition: all .5s ;
+	    -ms-transition: all .5s ;
+	     -o-transition: all .5s ;
+	        transition: all .5s ;
 } 
 
 .navbar > ul > li > a:hover {
-	color: #efd3d7;
+	color: black;
 } 
 
