@@ -34,8 +34,8 @@
 /* Start Profile Section */
 
 .profile {
-	height: 550px;
-	background: #4B00FF;
+	height: 700px;
+	background: #214977;
 	color: #ffe9f3;
 	padding-top: 200px;
 }
@@ -53,6 +53,7 @@
 	position: relative;
 	top: 40px;
 	left: 600px;
+	width: 400px;
 	font-family: Poppins;
 	font-size: 24px;
 }
@@ -64,18 +65,20 @@
 	font-family: Questrial;
 	font-size: 18px;
 	line-height: 1.8rem;
+	width: 600px;
 }
 
 /* Stack */
 
 .container {
-	height: 300px;
-	background: #000C31;
+	min-height: 360px;
+	background: #0A2C52;
 }
 
 .tools {
 	position: relative;
-	top: 30px;
+	display: block;
+	top: 70px;
 	font-family: Poppins;
 	font-size: 24px;
 	text-align: center;
@@ -84,14 +87,15 @@
 
 .ul {
 	display: flex;
+	flex-wrap: wrap;
 	position: relative;
-	top: 80px;
+	padding-top: 100px;
 	justify-content: center;
 }
 
 
 .ul > li > img {
-	height: 100px;
+	height: 90px;
 	width: auto;
-	margin: 0 10px 0 10px;
+	margin: 20px;
 }
