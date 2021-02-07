@@ -29,7 +29,19 @@
 	        transition: all .5s ;
 } 
 
-.navbar > ul > li > a:hover {
-	color: black;
+.navbar > ul > li {
+	-webkit-transition: all .25s ease-in;
+	   -moz-transition: all .25s ease-in;
+	    -ms-transition: all .25s ease-in;
+	     -o-transition: all .25s ease-in;
+	        transition: all .25s ease-in;
+}
+
+.navbar > ul > li:hover {
+	-webkit-transform: scale(1.1, 1.1);
+	   -moz-transform: scale(1.1, 1.1);
+	    -ms-transform: scale(1.1, 1.1);
+	     -o-transform: scale(1.1, 1.1);
+	        transform: scale(1.1, 1.1);
 } 
 

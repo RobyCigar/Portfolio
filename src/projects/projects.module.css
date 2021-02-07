@@ -49,8 +49,10 @@
 	justify-content: center;
 	margin: 20px;
 	width: 300px;
+	height: 350px;
 	padding: 80px 0;
-	background: #ffffff2F;
+	background: #1611592F;
+	border: 1px solid gray;
 	border-radius: 6px;
 	z-index: 1000;
 	-webkit-transition: all .2s ease-in;
@@ -126,10 +128,16 @@
 	        transition: all 1s ease-in;
 }
 
-.modal > span > img {
+.image {
+	display: flex;
+	justify-content: center;
+	flex-wrap: wrap;
+}
+
+.image > span > img {
 	height: 200px;
 	width: auto;
-	margin: 0 auto 25px auto;
+	margin: 0 10px 25px 10px;
 }
 
 .modal > p {

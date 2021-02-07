@@ -52,8 +52,6 @@ const Anim = () => {
     					</>
     				)
     			})}
-
-
     		</div>
     	</div>
 
@@ -69,11 +67,13 @@ const Anim = () => {
                   <img className={styles.close} src={close} alt="close"/>
                 </div>
 
+              <div className={styles.image}>
                 {modal.pic.map(val => 
                   <span>
                     <img src={`${process.env.PUBLIC_URL}/proj/${val}.png`} alt=""/>  
                   </span>
                 )}
+              </div>
 
                 <p>{modal.desc}</p>
               </motion.div> 
