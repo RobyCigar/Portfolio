@@ -9,7 +9,8 @@ import js from '../assets/JS.png';
 import rc from '../assets/RC.png';
 import gh from '../assets/GH.png';
 import tw from '../assets/TW.svg';
-import st from '../assets/ST.png'
+import sublime from '../assets/sublime.png';
+import figma from '../assets/figma.png';
 
 
 export default function Content() {
@@ -20,6 +21,9 @@ export default function Content() {
   const springConfig = { damping: 25, stiffness: 400 }
   const cursorXSpring = useSpring(cursorX, springConfig)
   const cursorYSpring = useSpring(cursorY, springConfig)
+
+  // Store the asset
+  const assets = [html, css, js, rc, gh, tw, sublime, figma]
 
   useEffect(() => {
     const moveCursor = (e) => {
@@ -57,7 +61,6 @@ export default function Content() {
 					variants={variants}
 					transition={{ duration: 0.9 }}
 				>
-
 					<p className={styles.jumbo}>Hi, you can call me Roby</p>
 					<p className={styles.intro}>
 						🌏 I have a dream to become a frontend dev and work in foreign country <br/>
@@ -71,27 +74,13 @@ export default function Content() {
 			<div className={styles.container}>
 				<p className={styles.tools}>Tools</p>
 				<ul className={styles.ul}>
-					<li>
-						<img src={html} alt="html"></img>
-					</li>
-					<li>
-						<img src={css} alt="css"></img>
-					</li>
-					<li>
-						<img src={js} alt="js"></img>
-					</li>
-					<li>
-						<img src={st} alt="Sublime text"></img>
-					</li>
-					<li>
-						<img src={rc} alt="react"></img>
-					</li>
-					<li>
-						<img src={gh} alt="github"></img>
-					</li>		
-					<li>
-						<img src={tw} alt="Tailwind"></img>
-					</li>
+					
+						{assets.map(val => 
+							<li>
+								<img src={val} alt="html"/>
+							</li>
+						)}
+					
 				</ul>
 			</div>
     	</div>

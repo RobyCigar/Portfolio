@@ -10,6 +10,7 @@ import './App.css';
 import Profile from './profile/index.js';
 import Projects from './projects/projects.js';
 import Counter from './redux/Counter'
+import Navbar from './profile/navbar'
 
 
 

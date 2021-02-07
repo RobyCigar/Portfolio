@@ -78,7 +78,7 @@
 .tools {
 	position: relative;
 	display: block;
-	top: 70px;
+	top: 50px;
 	font-family: Poppins;
 	font-size: 24px;
 	text-align: center;
@@ -89,7 +89,8 @@
 	display: flex;
 	flex-wrap: wrap;
 	position: relative;
-	padding-top: 100px;
+	padding-top: 90px;
+	padding-bottom: 20px;
 	justify-content: center;
 }
 
@@ -97,5 +98,5 @@
 .ul > li > img {
 	height: 90px;
 	width: auto;
-	margin: 20px;
+	margin: 25px 40px;
 }
