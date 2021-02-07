@@ -1,9 +1,8 @@
-import React, { useState, useEffect, useRef } from "react"
+import React, { useState } from "react"
 import { motion } from 'framer-motion';
 import data from '../data.js'
 import styles from "./projects.module.css"
 import Navbar from '../profile/navbar'
-import ReactMarkdown from 'react-markdown';
 import mark from '../assets/mark.png'
 import earth from '../assets/earth.svg'
 import close from '../assets/close.svg'
@@ -11,7 +10,6 @@ import close from '../assets/close.svg'
 
 const Anim = () => {
   const [modal, setModal] = useState({"show": false, "desc": null, "pic": []})
-  const [desc, setDesc] = useState('')
 
   const variants = {
     hidden: { opacity: 0 },

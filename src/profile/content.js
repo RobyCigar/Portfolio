@@ -54,20 +54,24 @@ export default function Content() {
 	        />
 
 			<div className={styles.profile}>
+				<div className={styles.before}></div>
 				<img src={face} alt="my-profile" className={styles.face}></img>
 				<motion.div
+					className={styles.intro}
 					initial="hidden"
 					animate="visible"
 					variants={variants}
 					transition={{ duration: 0.9 }}
 				>
-					<p className={styles.jumbo}>Hi, you can call me Roby</p>
-					<p className={styles.intro}>
-						🌏 I have a dream to become a frontend dev and work in foreign country <br/>
-						🖥 I’m interested in learning new frontend technology <br/>
-						🔥 My 2021 Goals is working as a freelance <br/>
-						🏃 I do parkour for sport
-					</p>
+					<div className={styles.textContainer}>
+						<p className={styles.jumbo}>Hi, you can call me Roby</p>
+						<p className={styles.par}>
+							🌏 I have a dream to become a frontend dev and work in foreign country <br/>
+							🖥 I’m interested in learning new frontend technology <br/>
+							🔥 My 2021 Goals is working as a freelance <br/>
+							🏃 I do parkour for sport
+						</p>
+					</div>
 				</motion.div>
 			</div>
 			 

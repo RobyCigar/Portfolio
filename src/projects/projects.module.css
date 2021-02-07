@@ -20,12 +20,12 @@
 .back::before {
 	display: block;
 	content: "";
-	height: 100px;
+	height: 50px;
 	width: 100vw;
 }
 
 .container {
-	margin: auto;
+	margin: 90px auto;
 	display: grid;
 	grid-template-columns: auto auto auto;
 	width: 90%;
@@ -55,6 +55,7 @@
 	border: 1px solid gray;
 	border-radius: 6px;
 	z-index: 1000;
+	box-shadow: 5px 0 20px #2D2D2D99;
 	-webkit-transition: all .2s ease-in;
 	   -moz-transition: all .2s ease-in;
 	    -ms-transition: all .2s ease-in;
