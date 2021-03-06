@@ -1,30 +1,19 @@
-import React from 'react';
-import {
-	BrowserRouter as Router,
-	Switch,
-	Route
-} from "react-router-dom";
+import styles from './App.css';
 
-import './App.css';
-
-import Profile from './profile/index.js';
-import Projects from './projects/projects.js';
-import Counter from './redux/Counter'
+import Content from './components/content'
+import Footer from './components/footer'
+import Projects from './components/projects'
 
 
 
 
 function App() {
   return (
-		<>
-			<Router>
-				<Switch>
-					<Route path="/" exact component={Profile} />
-					<Route path="/Projects" component={Projects} />
-					<Route path="/counter" component={Counter}/>
-				</Switch>
-			</Router>
-		</>
+		<div className={styles.App}>
+			<Content/>
+			<Projects/>
+			<Footer/>
+		</div>
   );
 }
 

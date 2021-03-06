@@ -1,10 +1,8 @@
 .back {
 	height: auto;
-	width: 100vw;
-	background: #214977;
+	background: var(--dark);
 	color: white;
 	font-weight: 700;
-	z-index: -100;
 	-webkit-transition: all .25s ease-in;
 	   -moz-transition: all .25s ease-in;
 	    -ms-transition: all .25s ease-in;
@@ -12,55 +10,37 @@
 	        transition: all .25s ease-in;
 }
 
-.blur {
-	filter: blur(3px);
-	-webkit-filter: blur(3px);
-}
-
-.back::before {
-	display: block;
-	content: "";
-	height: 50px;
-	width: 100vw;
+.title {
+	font-family: Poppins;
+	padding: 300px 0 50px 0;
+	text-align: center;
+	font-size: 24px;
 }
 
 .container {
-	margin: 90px auto;
+	margin: auto;
 	display: grid;
 	grid-template-columns: auto auto auto;
 	width: 90%;
-}
-
-@media only screen and (max-width: 800px) {
-	.container {
-		grid-template-columns: auto auto;
-	}
-}
-
-@media only screen and (max-width: 600px) {
-	.container {
-		grid-template-columns: auto;
-	}
 }
 
 .card {
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
-	margin: 20px;
+	margin: 30px auto;
 	width: 300px;
 	height: 350px;
 	padding: 80px 0;
 	background: #1611592F;
 	border: 1px solid gray;
 	border-radius: 6px;
-	z-index: 1000;
-	box-shadow: 5px 0 20px #2D2D2D99;
-	-webkit-transition: all .2s ease-in;
-	   -moz-transition: all .2s ease-in;
-	    -ms-transition: all .2s ease-in;
-	     -o-transition: all .2s ease-in;
-	        transition: all .2s ease-in;
+	box-shadow: 5px 0 20px #FFFFFF33;
+	-webkit-transition: all .1s ease-in;
+	   -moz-transition: all .1s ease-in;
+	    -ms-transition: all .1s ease-in;
+	     -o-transition: all .1s ease-in;
+	        transition: all .1s ease-in;
 }
 
 .card:hover {
@@ -114,7 +94,8 @@
 	     -o-transform: translate(-50%, -50%);
 	        transform: translate(-50%, -50%);
 	height: 540px;
-	width: 600px;
+	max-width: 600px;
+	width: 90%;
 	padding: 50px;
 	background: #DFCBF8;
 	border-radius: 20px;
@@ -122,11 +103,21 @@
 	box-shadow: 0 2px 10px white;
 	overflow: auto;
 	z-index: 30;
+	animation: pop 2s 1;
 	-webkit-transition: all 1s ease-in;
 	   -moz-transition: all 1s ease-in;
 	    -ms-transition: all 1s ease-in;
 	     -o-transition: all 1s ease-in;
 	        transition: all 1s ease-in;
+}
+
+@keyframes pop {
+	from {
+		opacity: 0;
+	}
+	to {
+		opacity: 1;
+	}
 }
 
 .image {
@@ -148,10 +139,10 @@
 }
 
 .close {
-	position: relative;
+	position: absolute;
+	top: 20px;
+	right: 20px;
 	cursor: pointer;
-	bottom: 20px;
-	left: 475px;
 	height: 32px;
 	width: 32px;
 	-webkit-transition: all .25s ease-in;
@@ -167,4 +158,17 @@
 	    -ms-transform: scale(1.4, 1.4);
 	     -o-transform: scale(1.4, 1.4);
 	        transform: scale(1.4, 1.4);
+}
+
+
+@media only screen and (max-width: 800px) {
+	.container {
+		grid-template-columns: auto auto;
+	}
+}
+
+@media only screen and (max-width: 600px) {
+	.container {
+		grid-template-columns: auto;
+	}
 }

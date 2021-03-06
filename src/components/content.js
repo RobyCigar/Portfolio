@@ -1,5 +1,7 @@
 import { useEffect } from "react"
 import { motion, useMotionValue, useSpring } from "framer-motion"
+import AOS from 'aos';
+import "aos/dist/aos.css"
 
 import styles from './content.module.css';
 import face from '../assets/face.png';
@@ -11,7 +13,6 @@ import gh from '../assets/GH.png';
 import tw from '../assets/TW.svg';
 import sublime from '../assets/sublime.png';
 import figma from '../assets/figma.png';
-
 
 export default function Content() {
 
@@ -26,6 +27,11 @@ export default function Content() {
   const assets = [html, css, js, rc, gh, tw, sublime, figma]
 
   useEffect(() => {
+
+	  AOS.init({
+	    duration : 1000
+	  });
+
     const moveCursor = (e) => {
       cursorX.set(e.clientX - 16);
       cursorY.set(e.clientY - 16);
@@ -54,34 +60,24 @@ export default function Content() {
 	        />
 
 			<div className={styles.profile}>
-				<div className={styles.before}></div>
-				<img src={face} alt="my-profile" className={styles.face}></img>
-				<motion.div
-					className={styles.intro}
-					initial="hidden"
-					animate="visible"
-					variants={variants}
-					transition={{ duration: 0.9 }}
-				>
-					<div className={styles.textContainer}>
-						<p className={styles.jumbo}>Hi, you can call me Roby</p>
-						<p className={styles.par}>
-							🌏 I have a dream to become a frontend dev and work in foreign country <br/>
-							🖥 I’m interested in learning new frontend technology <br/>
-							🔥 My 2021 Goals is working as a freelance <br/>
-							🏃 I do parkour for sport
-						</p>
-					</div>
-				</motion.div>
+				<img src={face} alt="my-profile" className={styles.face}/>
+				<div className={styles.textContainer} data-aos="fade-left">
+					<p className={styles.jumbo}>Hi, you can call me Roby, I'm from  🇮🇩.</p>
+					<p className={styles.par}>
+						🌏 I have a dream to become a frontend developer<br/>
+						🖥 I’m interested in learning new frontend technology. <br/>
+						🔥 My 2021 Goals is working as a freelance. <br/>
+						🏃 I do parkour for sport.
+					</p>
+				</div>
 			</div>
 			 
 			<div className={styles.container}>
 				<p className={styles.tools}>Tools</p>
 				<ul className={styles.ul}>
-					
 						{assets.map(val => 
 							<li>
-								<img src={val} alt="html"/>
+								<img className={styles.icon} src={val} alt="html" data-aos="zoom-out-up"/>
 							</li>
 						)}
 					

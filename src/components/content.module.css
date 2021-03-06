@@ -8,7 +8,7 @@
 	height: 100px;
 	mix-blend-mode: difference;
 	background-color: white;
-	z-index: 10;
+	z-index: 0;
 
 	border-radius: 30% 70% 70% 30%/30% 30% 70% 70%;
 	background-color: white;
@@ -33,43 +33,22 @@
 
 /* Start Profile Section */
 
-@media only screen and (max-width: 1120px) {
-	.textContainer {
-		text-align: center;
-	}
-
-	.face {
-		margin: auto !important;
-	}
-
-	.intro {
-		margin: 90px auto auto auto !important;
-	}
-}
-
 .profile {
 	display: flex;
-	flex-wrap: wrap;
 	justify-content: center;
-	background: #023772;
-	color: #ffe9f3;
-	padding-top: 200px;
-	padding-bottom: 170px;
+	align-items: center;
+	background: var(--dark);
+	padding: 190px 0;
 }
 
 .face {
-	margin: auto 10px auto 16%;
-	height: 350px;
-	width: auto;
-}
-
-.intro {
-	margin: auto auto auto 10px;
+	width: 25%;
+	min-width: 250px;
 }
 
 .textContainer {
-	width: 90%;
-	margin: auto ;
+	color: white;
+	padding: 30px 40px;
 }
 
 .jumbo {
@@ -81,38 +60,52 @@
 .par {
 	font-family: Questrial;
 	font-size: 18px;
-	line-height: 1.8rem;
+	line-height: 2rem;
 }
 
 /* Stack */
 
 .container {
-	min-height: 360px;
-	background: #0A2C52;
+	background: var(--dark);
+	padding: 80px 0 20px 0;
 }
 
 .tools {
-	position: relative;
-	display: block;
-	top: 50px;
 	font-family: Poppins;
 	font-size: 24px;
 	text-align: center;
 	color: white;
+	padding: 100px 0;
 }
 
 .ul {
+	color: white;
 	display: flex;
 	flex-wrap: wrap;
-	position: relative;
-	padding-top: 90px;
-	padding-bottom: 20px;
 	justify-content: center;
 }
 
 
-.ul > li > img {
-	height: 90px;
+.icon {
+	height: 60px;
 	width: auto;
-	margin: 25px 40px;
+	margin: 25px 20px;
+}
+
+@media only screen and (max-width: 1120px) {
+	.textContainer {
+		padding: 40px 50px 0 50px;
+	}
+}
+
+@media only screen and (max-width: 800px) {
+	.profile {
+		flex-direction: column;
+	}
+
+	.icon {
+		height: 30px;
+		margin: 20px 10px;
+	}
+
 }

@@ -1,5 +1,5 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap'); /*font-family: 'Poppins', sans-serif;*/
-@import url('https://fonts.googleapis.com/css2?family=Questrial&display=swap'); /*font-family: 'Questrial', sans-serif;*/
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Questrial&display=swap');
 
 
 
@@ -15,7 +15,10 @@
 	font-family: 'Questrial';
 }
 
-
+:root {
+	--purple: #023772;
+	--dark: #0D0F23;
+}
 
 /* HTML5 display-role reset for older browsers */
 article, aside, details, figcaption, figure, 
@@ -24,7 +27,6 @@ footer, header, hgroup, menu, nav, section {
 }
 body {
 	line-height: 1;
-	background: #214977;
 }
 ol, ul {
 	list-style: none;
