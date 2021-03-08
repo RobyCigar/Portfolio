@@ -67,7 +67,7 @@ export default function Content() {
 						🌏 I have a dream to become a frontend developer<br/>
 						🖥 I’m interested in learning new frontend technology. <br/>
 						🔥 My 2021 Goals is working as a freelance. <br/>
-						🏃 I do parkour for sport.
+						🏃 I always do my best.
 					</p>
 				</div>
 			</div>

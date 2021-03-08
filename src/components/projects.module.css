@@ -28,6 +28,7 @@
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
+	text-align: center;
 	margin: 30px auto;
 	width: 300px;
 	height: 350px;
@@ -36,19 +37,10 @@
 	border: 1px solid gray;
 	border-radius: 6px;
 	box-shadow: 5px 0 20px #FFFFFF33;
-	-webkit-transition: all .1s ease-in;
-	   -moz-transition: all .1s ease-in;
-	    -ms-transition: all .1s ease-in;
-	     -o-transition: all .1s ease-in;
-	        transition: all .1s ease-in;
 }
 
 .card:hover {
-	-webkit-transform: scale(1.08, 1.08);
-	   -moz-transform: scale(1.08, 1.08);
-	    -ms-transform: scale(1.08, 1.08);
-	     -o-transform: scale(1.08, 1.08);
-	        transform: scale(1.08, 1.08);
+	background: #FFFFFF11;
 }
 
 .card > * {

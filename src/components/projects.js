@@ -43,17 +43,17 @@ const Anim = () => {
                         <span> {val} </span>
                       ))}
                     </h5>
-                    <h5>Date : 2021</h5>
+                    <h5> </h5> {/* date here */}
                   </div>
                   <div className={styles.link}>
                     {val.link.github ? (
-                      <a href={val.link.github}>
+                      <a href={val.link.github} target="_blank" rel="noreferrer">
                         <img src={mark} alt="" />
                       </a>
                     ) : null}
 
                     {val.link.host ? (
-                      <a href={val.link.host}>
+                      <a href={val.link.host} target="_blank" rel="noreferrer">
                         <img src={earth} alt="" />
                       </a>
                     ) : null}
@@ -73,7 +73,7 @@ const Anim = () => {
             </div>
 
             <div className={styles.image}>
-              {modal.pic.map((val) => (
+              {modal.pic?.map((val) => (
                 <span>
                   <img
                     src={`${process.env.PUBLIC_URL}/proj/${val}.png`}

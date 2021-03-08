@@ -38,7 +38,7 @@
 	justify-content: center;
 	align-items: center;
 	background: var(--dark);
-	padding: 190px 0;
+	padding: 140px 0;
 }
 
 .face {
@@ -46,9 +46,11 @@
 	min-width: 250px;
 }
 
+
 .textContainer {
 	color: white;
 	padding: 30px 40px;
+	margin: 100px 0;
 }
 
 .jumbo {
