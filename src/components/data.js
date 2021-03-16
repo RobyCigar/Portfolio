@@ -2,6 +2,15 @@ let data = {
 	"nama": "rabih",
 	"projects": [
 		{
+			"title": "Treot Apps",
+			"tech": ["Nodejs", "React", "MongoDB", "Mongoose", "Express"],
+			"desc": " ",
+			"link": {
+				"github": "https://github.com/RobyCigar/treot-apps"
+			},
+			"pic": ["treot", "treot2", "treot3"]
+		},
+		{
 			"title": "Easy Bank Landing Page ",
 			"tech": ["html", "css", "js"],
 			"desc": " ",
@@ -86,9 +95,18 @@ let data = {
 				"host": "https://neumorphism-dashboard.vercel.app/",
 				"github": "https://github.com/RobyCigar/neumorphism-dashboard"
 			},
-			"pic": ["neumorphism", ["neumorphism2"]]
+			"pic": ["neumorphism", "neumorphism2"]
 		},
-
+		{
+			"title": "Stuff Landing Page",
+			"tech": ["html", "css", "js"],
+			"desc": "Simple landing page for school project",
+			"link": {
+				"host": "https://robycigar.github.io/",
+				"github": "https://github.com/RobyCigar/RobyCigar.github.io"
+			},
+			"pic": ["stuff", "stuff1"]
+		},
 
 	]
 }
