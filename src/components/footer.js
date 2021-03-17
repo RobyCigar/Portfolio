@@ -13,15 +13,15 @@ function Footer() {
   			<div className={styles.socmed}>
 					<div>
             <img src={insta} alt="Ista"/>
-            <p>Instagram : @rabih31415</p>
+            <p className={styles.link}>Instagram : @rabih31415</p>
           </div>
           <div>
             <img src={github} alt="github"/>
-            <p>Github : RobyCigar</p>
+            <p className={styles.link}>Github : RobyCigar</p>
           </div>
           <div>
             <img src={twitter} alt="github"/>
-            <p>Twitter : @RobyCigar</p>
+            <p className={styles.link} href="https://twitter.com/Robycigar">Twitter : @RobyCigar</p>
           </div>
 				</div>
         <p className={styles.attr}>Created with 💖 in 🇮🇩</p>

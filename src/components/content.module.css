@@ -54,13 +54,17 @@
 }
 
 .jumbo {
-	font-family: Poppins;
-	font-size: 24px;
+	font-family: Inter;
+	font-weight: 900;
+	text-transform: uppercase;
+	text-align: center;
+	font-size: 50px;
 	margin-bottom: 20px;
 }
 
 .par {
 	font-family: Questrial;
+	text-align: center;
 	font-size: 18px;
 	line-height: 2rem;
 }

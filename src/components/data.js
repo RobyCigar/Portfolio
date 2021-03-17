@@ -107,6 +107,16 @@ let data = {
 			},
 			"pic": ["stuff", "stuff1"]
 		},
+		{
+			"title": "React Portofolio",
+			"tech": ["react"],
+			"desc": " ",
+			"link": {
+				"host": "https://rabih.vercel.app/",
+				"github": "https://github.com/RobyCigar/Portfolio"
+			},
+			"pic": ["porto", "porto1"]
+		},
 
 	]
 }

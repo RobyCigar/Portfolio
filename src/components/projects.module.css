@@ -34,13 +34,22 @@
 	height: 350px;
 	padding: 80px 0;
 	background: #1611592F;
-	border: 1px solid gray;
-	border-radius: 6px;
-	box-shadow: 5px 0 20px #FFFFFF33;
+	border: 2px solid #FFFFFF66;
+	border-radius: 20px;
+	-webkit-transition: all .55s ease-in;
+	   -moz-transition: all .55s ease-in;
+	    -ms-transition: all .55s ease-in;
+	     -o-transition: all .55s ease-in;
+	        transition: all .55s ease-in;
 }
 
 .card:hover {
-	background: #FFFFFF11;
+	-webkit-transform: translate(-20px, -20px);
+	   -moz-transform: translate(-20px, -20px);
+	    -ms-transform: translate(-20px, -20px);
+	     -o-transform: translate(-20px, -20px);
+	        transform: translate(-20px, -20px);
+	background: #FFFFFF0A;
 }
 
 .card > * {
@@ -52,16 +61,6 @@
 	line-height: 1.5rem;
 	font-weight: 900;
 }
-
-.card > div:hover {
-	color: #FAB1B1;
-	-webkit-transition: all .4s ;
-	   -moz-transition: all .4s ;
-	    -ms-transition: all .4s ;
-	     -o-transition: all .4s ;
-	        transition: all .4s ;
-}
-
 
 .link {
 	position: relative;

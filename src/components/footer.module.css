@@ -25,7 +25,8 @@
 	height: 30px;
 }
 
-.socmed > div > p {
+.link {
+	color: white;
 	padding: 0 20px;
 }
 
