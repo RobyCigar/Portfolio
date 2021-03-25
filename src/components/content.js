@@ -5,7 +5,6 @@ import Typed from "react-typed";
 import "aos/dist/aos.css";
 
 import styles from "./content.module.css";
-import face from "../assets/face.png";
 import html from "../assets/HTML.png";
 import css from "../assets/CSS.png";
 import js from "../assets/JS.png";
@@ -60,13 +59,17 @@ export default function Content() {
 
 			<div className={styles.profile}>
 				<div className={styles.textContainer} data-aos="fade-left">
-					<p className={styles.jumbo}>Hi, you can call me Roby</p>
-					<p className={styles.jumbo}>I'm from 🇮🇩</p>
+					<p className={`${styles.jumbo} ${styles.gradient}`}>Hi, call me Roby</p>
+					<p className={styles.jumbo}>
+						<span className={`${styles.jumbo} ${styles.gradient}`}>I'm from{"   "}</span>
+						<span className={styles.flag}>🇮🇩</span>
+					</p>
 					<p className={styles.par}>
 						<Typed
 							strings={[
 								"🖥 Interested in learning new frontend technology.",
 								"🔥 My 2021 Goals is working as a freelance.",
+								"✨ Usually do backend stuff with nodejs",
 								"🏃 I always do my best.",
 							]}
 							typeSpeed={25}

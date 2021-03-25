@@ -68,16 +68,7 @@ let data = {
 				"github": "https://github.com/RobyCigar/next.js-blog"
 			},
 			"pic": ["blog1", "blog2"]
-		},
-		{
-			"title": "Twitter Bot",
-			"tech": ["noje js", "api"],
-			"desc": "Main feature of this bot is that it can tweet automatically each hour. currently inactive",
-			"link": {
-				"github": "https://github.com/RobyCigar/japanese-tweebot"
-			},
-			"pic": ["none"]
-		},		
+		},	
 		{
 			"title": "Telegram Bot",
 			"tech": ["nodejs", "api"],

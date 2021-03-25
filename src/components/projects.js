@@ -4,8 +4,7 @@ import "aos/dist/aos.css"
 
 import data from "./data.js";
 import styles from "./projects.module.css";
-import Navbar from "./navbar";
-import mark from "../assets/mark.png";
+import mark from "../assets/github.svg";
 import earth from "../assets/globe.svg";
 import close from "../assets/close.svg";
 
@@ -43,7 +42,6 @@ const Anim = () => {
                         <span> {val} </span>
                       ))}
                     </h5>
-                    <h5> </h5> {/* date here */}
                   </div>
                   <div className={styles.link}>
                     {val.link.github ? (
@@ -76,6 +74,7 @@ const Anim = () => {
               {modal.pic?.map((val) => (
                 <span>
                   <img
+                    style={{width: '100%', height: 'auto', marginTop: 25}}
                     src={`${process.env.PUBLIC_URL}/proj/${val}.png`}
                     alt=""
                   />

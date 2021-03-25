@@ -11,7 +11,7 @@
 }
 
 .title {
-	font-family: Poppins;
+	font-family: Poppins, sans-serif;
 	padding: 300px 0 50px 0;
 	text-align: center;
 	font-size: 24px;
@@ -59,7 +59,7 @@
 .card > div:nth-child(1)  {
 	cursor: pointer;
 	line-height: 1.5rem;
-	font-weight: 900;
+	font-weight: 600;
 }
 
 .link {
@@ -136,11 +136,11 @@
 	cursor: pointer;
 	height: 32px;
 	width: 32px;
-	-webkit-transition: all .25s ease-in;
-	   -moz-transition: all .25s ease-in;
-	    -ms-transition: all .25s ease-in;
-	     -o-transition: all .25s ease-in;
-	        transition: all .25s ease-in;
+	-webkit-transition: all .15s ease-in;
+	   -moz-transition: all .15s ease-in;
+	    -ms-transition: all .15s ease-in;
+	     -o-transition: all .15s ease-in;
+	        transition: all .15s ease-in;
 }
 
 .close:hover {

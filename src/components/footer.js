@@ -2,7 +2,7 @@ import styles from './footer.module.css';
 
 import insta from '../assets/Insta.svg'
 import wa from '../assets/WA.svg'
-import github from '../assets/mark.png'
+import github from '../assets/github.svg'
 import twitter from '../assets/twitter.svg'
 
 
@@ -13,15 +13,15 @@ function Footer() {
   			<div className={styles.socmed}>
 					<div>
             <img src={insta} alt="Ista"/>
-            <p className={styles.link}>Instagram : @rabih31415</p>
+            <p className={styles.link}><a href="https://instagram.com/rabih3.1415">Instagram : @rabih31415</a></p>
           </div>
           <div>
             <img src={github} alt="github"/>
-            <p className={styles.link}>Github : RobyCigar</p>
+            <p className={styles.link}><a href="https://github.com/Robycigar">Github : RobyCigar</a></p>
           </div>
           <div>
             <img src={twitter} alt="github"/>
-            <p className={styles.link} href="https://twitter.com/Robycigar">Twitter : @RobyCigar</p>
+            <p className={styles.link}> <a  href="https://twitter.com/Robycigar">Twitter : @RobyCigar</a></p>
           </div>
 				</div>
         <p className={styles.attr}>Created with 💖 in 🇮🇩</p>

@@ -12,7 +12,7 @@
 }
 
 .socmed {
-	font-family: 'Questrial';
+	font-family: 'Questrial', sans-serif;
 }
 
 .socmed > div {
@@ -28,6 +28,11 @@
 .link {
 	color: white;
 	padding: 0 20px;
+	z-index: 20;
+}
+
+a {
+	color: white;
 }
 
 .attr {
