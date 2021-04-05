@@ -13,6 +13,7 @@ import gh from "../assets/GH.png";
 import tw from "../assets/TW.svg";
 import sublime from "../assets/sublime.png";
 import figma from "../assets/figma.png";
+import redux from "../assets/redux.svg"
 
 export default function Content() {
 	const cursorX = useMotionValue(-100);
@@ -23,7 +24,7 @@ export default function Content() {
 	const cursorYSpring = useSpring(cursorY, springConfig);
 
 	// Store the asset
-	const assets = [html, css, js, rc, gh, tw, sublime, figma];
+	const assets = [html, css, js, rc, gh, tw, sublime, figma, redux];
 
 	useEffect(() => {
 		AOS.init({

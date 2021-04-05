@@ -36,20 +36,22 @@
 	background: #1611592F;
 	border: 2px solid #FFFFFF66;
 	border-radius: 20px;
-	-webkit-transition: all .55s ease-in;
-	   -moz-transition: all .55s ease-in;
-	    -ms-transition: all .55s ease-in;
-	     -o-transition: all .55s ease-in;
-	        transition: all .55s ease-in;
 }
 
-.card:hover {
-	-webkit-transform: translate(-20px, -20px);
-	   -moz-transform: translate(-20px, -20px);
-	    -ms-transform: translate(-20px, -20px);
-	     -o-transform: translate(-20px, -20px);
-	        transform: translate(-20px, -20px);
-	background: #FFFFFF0A;
+.cardContainer {
+	-webkit-transition: all .2s ease-in;
+	   -moz-transition: all .2s ease-in;
+	    -ms-transition: all .2s ease-in;
+	     -o-transition: all .2s ease-in;
+	        transition: all .2s ease-in;
+}
+
+.cardContainer:hover {
+	-webkit-transform: translate( 0, -20px) !important;
+	   -moz-transform: translate( 0, -20px) !important;
+	    -ms-transform: translate( 0, -20px) !important;
+	     -o-transform: translate( 0, -20px) !important;
+	        transform: translate( 0, -20px) !important;
 }
 
 .card > * {
@@ -118,6 +120,7 @@
 }
 
 .image > span > img {
+	max-height: 300px;
 	height: 200px;
 	width: auto;
 	margin: 0 10px 25px 10px;

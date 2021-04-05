@@ -2,6 +2,16 @@ let data = {
 	"nama": "rabih",
 	"projects": [
 		{
+			"title": "Japan Travel",
+			"tech": ["React", "SCSS"],
+			"desc": "Collaboration Project with my friend ajam as a UI/UX designer",
+			"link": {
+				"github": "https://github.com/RobyCigar/japan-travel",
+				"host": "https://japan-travel.vercel.app/"
+			},
+			"pic": ["japan", "japan1"]
+		},
+		{
 			"title": "Treot Apps",
 			"tech": ["Nodejs", "React", "MongoDB", "Mongoose", "Express"],
 			"desc": " ",
@@ -87,16 +97,6 @@ let data = {
 				"github": "https://github.com/RobyCigar/neumorphism-dashboard"
 			},
 			"pic": ["neumorphism", "neumorphism2"]
-		},
-		{
-			"title": "Stuff Landing Page",
-			"tech": ["html", "css", "js"],
-			"desc": "Simple landing page for school project",
-			"link": {
-				"host": "https://robycigar.github.io/",
-				"github": "https://github.com/RobyCigar/RobyCigar.github.io"
-			},
-			"pic": ["stuff", "stuff1"]
 		},
 		{
 			"title": "React Portofolio",

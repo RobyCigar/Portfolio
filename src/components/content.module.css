@@ -127,6 +127,10 @@
 		font-size: 30px;
 	}
 
+	.cursor {
+		display: none;
+	}
+
 	.icon {
 		height: 30px;
 		margin: 20px 10px;
