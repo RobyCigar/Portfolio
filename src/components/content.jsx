@@ -68,9 +68,9 @@ export default function Content() {
 					<p className={styles.par}>
 						<Typed
 							strings={[
-								"🖥 Interested in learning new frontend technology.",
-								"🔥 My 2021 Goals is working as a freelance.",
+								"🖥 Interested in learning frontend technology.",
 								"✨ Usually do backend stuff with nodejs",
+								"🔥 日本語を勉強して います。.",
 								"🏃 I always do my best.",
 							]}
 							typeSpeed={25}

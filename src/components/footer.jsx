@@ -13,7 +13,7 @@ function Footer() {
   			<div className={styles.socmed}>
 					<div>
             <img src={insta} alt="Ista"/>
-            <p className={styles.link}><a href="https://instagram.com/rabih3.1415">Instagram : @rabih31415</a></p>
+            <p className={styles.link}><a href="https://instagram.com/rabih31415">Instagram : @rabih31415</a></p>
           </div>
           <div>
             <img src={github} alt="github"/>
