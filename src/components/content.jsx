@@ -1,5 +1,5 @@
-import { useEffect } from "react";
 import { motion, useMotionValue, useSpring } from "framer-motion";
+import { useEffect } from "react";
 import AOS from "aos";
 import Typed from "react-typed";
 import "aos/dist/aos.css";
@@ -11,9 +11,9 @@ import js from "../assets/JS.png";
 import rc from "../assets/RC.png";
 import gh from "../assets/GH.png";
 import tw from "../assets/TW.svg";
-import sublime from "../assets/sublime.png";
 import figma from "../assets/figma.png";
-import redux from "../assets/redux.svg"
+import redux from "../assets/redux.svg";
+import ubuntu from "../assets/ubuntu.png"
 
 export default function Content() {
 	const cursorX = useMotionValue(-100);
@@ -24,7 +24,6 @@ export default function Content() {
 	const cursorYSpring = useSpring(cursorY, springConfig);
 
 	// Store the asset
-	const assets = [html, css, js, rc, gh, tw, sublime, figma, redux];
 
 	useEffect(() => {
 		AOS.init({
@@ -42,11 +41,6 @@ export default function Content() {
 			window.removeEventListener("mousemove", moveCursor);
 		};
 	}, []);
-
-	const variants = {
-		hidden: { opacity: 0, x: 150 },
-		visible: { opacity: 1, x: 0 },
-	};
 
 	return (
 		<div>
@@ -70,10 +64,10 @@ export default function Content() {
 							strings={[
 								"🖥 Interested in learning frontend technology.",
 								"✨ Usually do backend stuff with nodejs",
-								"🔥 日本語を勉強して います。.",
+								"🔥 日本語を勉強して います。",
 								"🏃 I always do my best.",
 							]}
-							typeSpeed={25}
+							typeSpeed={40}
 							loop
 						/>
 					</p>
@@ -83,12 +77,13 @@ export default function Content() {
 			<div className={styles.container}>
 				<p className={styles.tools}>Tools</p>
 				<ul className={styles.ul}>
-					{assets.map((val) => (
-						<li>
+					{assets.map((val, index) => (
+						<li key={index}>
 							<img
 								className={styles.icon}
-								src={val}
-								alt="html"
+								src={val.img}
+								alt={val.name}
+								title={val.name}
 								data-aos="zoom-out-up"
 							/>
 						</li>
@@ -98,3 +93,42 @@ export default function Content() {
 		</div>
 	);
 }
+
+const assets = [
+	{
+		name: "HTML",
+		img: html
+	},
+	{
+		name: "CSS",
+		img: css
+	},
+	{
+		name: "Javascript",
+		img: js
+	},
+	{
+		name: "React",
+		img: rc
+	},
+	{
+		name: "Github",
+		img: gh
+	},
+	{
+		name: "Tailwind",
+		img: tw
+	},
+	{
+		name: "Figma",
+		img: figma
+	},
+	{
+		name: "Redux",
+		img: redux
+	},
+	{
+		name: "Ubuntu",
+		img: ubuntu
+	}
+]

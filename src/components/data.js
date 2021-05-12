@@ -2,6 +2,16 @@ let data = {
 	"nama": "rabih",
 	"projects": [
 		{
+			"title": "Commercify",
+			"tech": ["React", "Redux", "Mongodb", "Nodejs", "Express"],
+			"desc": " ",
+			"link": {
+				"github": "https://github.com/RobyCigar/commercify",
+				"host": "https://commercify-filzqbe0u-robycigar.vercel.app/"
+			},
+			"pic": ["commercify1", "commercify2", "commercify3", "commercify4"]
+		},
+		{
 			"title": "Japan Travel",
 			"tech": ["React", "SCSS"],
 			"desc": "Collaboration Project with my friend ajam as a UI/UX designer",

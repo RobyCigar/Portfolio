@@ -28,6 +28,7 @@ const Anim = () => {
               <div className={styles.cardContainer}>
                 <div className={styles.card} data-aos="zoom-in-down">
                   <div
+                    className={styles.text}
                     onClick={() =>
                       setModal({
                         show: !modal.show,
