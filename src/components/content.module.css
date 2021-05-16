@@ -46,7 +46,7 @@
 }
 
 .jumbo {
-	font-family: Inter;
+	font-family: Inter, sans-serif;
 	font-weight: 900;
 	text-transform: uppercase;
 	text-align: center;
