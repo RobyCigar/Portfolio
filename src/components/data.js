@@ -4,7 +4,7 @@ let data = {
 		{
 			"title": "Commercify",
 			"tech": ["React", "Redux", "Mongodb", "Nodejs", "Express"],
-			"desc": " ",
+			"desc": "Here's Commercify, simple fullstack site built with MERN stack (Mongodb cloud, Express, React, Nodejs). I also use tools like redux to manage react state, redux saga to handle asynchronous API fetch. jwt(JSON web token) to handle authentication, bootstrap to hasten UI development process and make a responsive UI.",
 			"link": {
 				"github": "https://github.com/RobyCigar/commercify",
 				"host": "https://commercify-filzqbe0u-robycigar.vercel.app/"

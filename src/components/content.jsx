@@ -64,7 +64,7 @@ export default function Content() {
 							strings={[
 								"🖥 Interested in learning frontend technology.",
 								"✨ Usually do backend stuff with nodejs",
-								"🔥 日本語を勉強して います。",
+								"🔥 日本語を勉強しています。",
 								"🏃 I always do my best.",
 							]}
 							typeSpeed={40}
