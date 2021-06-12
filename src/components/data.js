@@ -12,6 +12,16 @@ let data = {
 			"pic": ["commercify1", "commercify2", "commercify3", "commercify4"]
 		},
 		{
+			"title": "Parkour nearby",
+			"tech": ["Nextjs", "Typescript"],
+			"desc": "Parkour nearby is a simple app built with nextjs to display parkour spot nearby your area, currently I have lacks of data to display because there is no API related to this project so I type the data manually.",
+			"link": {
+				"github": "https://github.com/RobyCigar/parkour-nearby",
+				"host": "https://parkour.nearby.vercel.app/"
+			},
+			"pic": ["parkour1", "parkour2", "parkour3"]
+		},
+		{
 			"title": "Japan Travel",
 			"tech": ["React", "SCSS"],
 			"desc": "Collaboration Project with my friend ajam as a UI/UX designer",
