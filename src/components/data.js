@@ -59,16 +59,6 @@ let data = {
 			},
 			"pic": ["blog1", "blog2"]
 		},
-		{
-			"title": "Money Tracker (mockup)",
-			"tech": ["figma"],
-			"desc": "Picture above is before and after redesign. Money tracker allows you to track your income and expenses.",
-			"link": {
-				"host": "https://www.figma.com/file/HUMnBoh5kLMySMokKP6xNC/Untitled?node-id=0%3A1",
-				"github": ""
-			},
-			"pic": ["money-tracker1", "money-tracker2"]
-		},
 
 	]
 }
