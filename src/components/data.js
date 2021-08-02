@@ -34,9 +34,10 @@ let data = {
 		{
 			"title": "Treot Apps",
 			"tech": ["Nodejs", "React", "MongoDB", "Mongoose", "Express"],
-			"desc": "Treot Apps is a simple quiz apps, where regular user can take a quiz with the time given by admin user. Main problem of this project is how to handle the authentication between regular user and admin user. Figma design also available on this link https://www.figma.com/file/9uFrebhy94cZ7nFfUqpKWo/Tryout-apps?node-id=0%3A1 ",
+			"desc": "Treot Apps is a simple quiz apps, where regular user can take a quiz with the time given by admin user. Main problem of this project is how to handle the authentication between regular user and admin user. I also designed the UI btw",
 			"link": {
-				"github": "https://github.com/RobyCigar/treot-apps"
+				"github": "https://github.com/RobyCigar/treot-apps",
+				"host": "https://www.figma.com/file/9uFrebhy94cZ7nFfUqpKWo/Tryout-apps?node-id=0%3A1"
 			},
 			"pic": ["treot", "treot2", "treot3"]
 		},
