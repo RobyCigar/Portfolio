@@ -55,28 +55,9 @@
 }
 
 .gradient {
-	background: linear-gradient(
-		90deg,
-		rgba(252, 176, 69, 1) 9%,
-		rgba(253, 29, 29, 1) 50%,
-		rgba(252, 176, 69, 1) 88%
-	);
-
-	-webkit-background-clip: text;
-	animation: gradient 4s ease-in 1s infinite;
-	text-fill-color: transparent;
-	-moz-background-clip: text;
-	-moz-text-fill-color: transparent;
-	-webkit-text-fill-color: transparent;
 	background-size: 200% auto;
 	text-align: center;
-	color: #000;
-}
-
-@keyframes gradient {
-	to {
-		background-position: 200% center;
-	}
+	color: #FFF;
 }
 
 .flag {
