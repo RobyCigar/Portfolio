@@ -6,6 +6,7 @@ import github from '../assets/github.svg'
 import twitter from '../assets/twitter.svg'
 import linkedin from '../assets/linkedin.svg'
 import youtube from '../assets/YT.svg'
+import hackerrank from '../assets/HR.png'
 
 function Footer() {
   	return (
@@ -23,6 +24,10 @@ function Footer() {
           <div>
             <img src={linkedin} alt="linkedin"/>
             <p className={styles.link}> <a  href="https://www.linkedin.com/in/rabih-utomo-36955a1b9/">Linkedin : Rabih Utomo</a></p>
+          </div>
+          <div>
+            <img src={hackerrank} alt="hackerrank"/>
+            <p className={styles.link}> <a  href="https://www.hackerrank.com/rabihutomo11">Hackerrank : rabihutomo11</a></p>
           </div>
 				</div>
         <p className={styles.attr}>Created with 💖 in 🇮🇩</p>
