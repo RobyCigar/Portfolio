@@ -8,7 +8,8 @@
 	height: 100px;
 	mix-blend-mode: difference;
 	background-color: white;
-	z-index: 0;
+	pointer-events:none;
+	z-index: 1;
 
 	border-radius: 30% 70% 70% 30%/30% 30% 70% 70%;
 	background-color: white;

@@ -99,7 +99,6 @@
 	border-radius: 20px;
 	color: #0A0A0A;
 	overflow: auto;
-	z-index: 30;
 	animation: pop 0.4s 1;
 	-webkit-transition: all 1s ease-in;
 	   -moz-transition: all 1s ease-in;

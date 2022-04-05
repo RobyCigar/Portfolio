@@ -14,7 +14,6 @@
 	display: flex;
 	list-style: none;
 	margin: auto 20px;
-	z-index: 100;
 }
 
 .navbar > ul > li > a {

@@ -78,7 +78,7 @@ const Anim = () => {
                 <span>
                   <img
                     style={{width: '100%', height: 'auto', marginTop: 25}}
-                    src={`${process.env.PUBLIC_URL}/proj/${val}.png`}
+                    src={`/proj/${val}.png`}
                     alt=""
                   />
                 </span>

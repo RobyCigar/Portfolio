@@ -27,7 +27,7 @@ export default function Content() {
 
 	useEffect(() => {
 		AOS.init({
-			duration: 1000,
+			duration: 700,
 		});
 
 		const moveCursor = (e) => {
