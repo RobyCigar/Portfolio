@@ -19,8 +19,9 @@
 
 :root {
 	--purple: #023772;
-	--dark: #222222;;
+	--dark: #1a1a1a;;
 }
+
 
 /* HTML5 display-role reset for older browsers */
 article, aside, details, figcaption, figure, 
