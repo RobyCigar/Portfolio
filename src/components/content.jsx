@@ -4,16 +4,15 @@ import Typed from "react-typed";
 
 
 import { ContentStyles as styles } from "../styles";;
-import html from "../assets/HTML.png";
-import css from "../assets/CSS.png";
-import js from "../assets/JS.png";
-import rc from "../assets/RC.png";
-import gh from "../assets/GH.png";
-import tw from "../assets/TW.svg";
-import figma from "../assets/figma.png";
-import redux from "../assets/redux.svg";
-import ubuntu from "../assets/ubuntu.png"
-import typescript from "../assets/TS.png";
+const assets = ['/HTML.png',
+	'/CSS.png',
+	'/JS.png',
+	'/RC.png',
+	'/GH.png',
+	'/TW.svg',
+	'/figma.png',
+	'/redux.svg',
+	'/ubuntu.png', '/TS.png']
 
 export default function Content() {
 	const cursorX = useMotionValue(-100);
@@ -75,16 +74,15 @@ export default function Content() {
 			</div>
 
 			<div className={styles.container}>
-				<p className={styles.tools}>Most Used Tools</p>
-				<ul className={styles.ul}>
+				<p className={styles.tools}>Tools</p>
+				<ul className={styles.ul} data-aos="zoom-out-up">
 					{assets.map((val, index) => (
 						<li key={index}>
 							<img
 								className={styles.icon}
-								src={val.img}
-								alt={val.name}
-								title={val.name}
-								data-aos="zoom-out-up"
+								src={`assets/${val}`}
+								alt={val}
+								title={val}
 							/>
 						</li>
 					))}
@@ -93,42 +91,3 @@ export default function Content() {
 		</div>
 	);
 }
-
-const assets = [
-	{
-		name: "HTML",
-		img: html
-	},
-	{
-		name: "CSS",
-		img: css
-	},
-	{
-		name: "Javascript",
-		img: js
-	},
-	{
-		name: "React",
-		img: rc
-	},
-	{
-		name: "Tailwind",
-		img: tw
-	},
-	{
-		name: "Figma",
-		img: figma
-	},
-	{
-		name: "Redux",
-		img: redux
-	},
-	{
-		name: "Ubuntu",
-		img: ubuntu
-	},
-	{
-		name: "Typescript",
-		img: typescript
-	}
-]

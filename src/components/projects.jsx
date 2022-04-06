@@ -1,10 +1,7 @@
-import { useState, useEffect } from "react";
+import { useState  } from "react";
 import { ProjectsStyles as styles } from "../styles";
 
 import data from "./data.js";
-import mark from "../assets/github.svg";
-import earth from "../assets/globe.svg";
-import close from "../assets/close.svg";
 
 const Anim = () => {
   const [modal, setModal] = useState({ show: false, desc: null, pic: [] });
@@ -40,13 +37,13 @@ const Anim = () => {
                   <div className={styles.link}>
                     {val.link.github ? (
                       <a href={val.link.github} target="_blank" rel="noreferrer">
-                        <img src={mark} alt="" />
+                        <img src="assets/github.svg" alt="" />
                       </a>
                     ) : null}
 
                     {val.link.host ? (
                       <a href={val.link.host} target="_blank" rel="noreferrer">
-                        <img src={earth} alt="" />
+                        <img src="assets/globe.svg" alt="" />
                       </a>
                     ) : null}
                   </div>
@@ -62,7 +59,7 @@ const Anim = () => {
         <div onClick={() => setModal({ show: !modal.show })} className={styles.backdrop}>
           <div className={styles.modal} >
             <div onClick={() => setModal({ show: !modal.show })}>
-              <img className={styles.close} src={close} alt="close" />
+              <img className={styles.close} src="assets/close.svg" alt="close" />
             </div>
 
             <div className={styles.image}>

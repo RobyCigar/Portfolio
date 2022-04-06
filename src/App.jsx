@@ -12,7 +12,7 @@ import Projects from './components/projects'
 function App() {
 	useEffect(() => {
 		AOS.init({
-			duration: 1500,
+			duration: 2000,
 		});
 	}, [])
   return (
