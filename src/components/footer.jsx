@@ -1,11 +1,8 @@
-import styles from './footer.module.css';
+import { FooterStyles as styles } from '../styles';
 
 import insta from '../assets/Insta.svg'
-import wa from '../assets/WA.svg'
 import github from '../assets/github.svg'
-import twitter from '../assets/twitter.svg'
 import linkedin from '../assets/linkedin.svg'
-import youtube from '../assets/YT.svg'
 import hackerrank from '../assets/HR.png'
 
 function Footer() {
@@ -30,7 +27,7 @@ function Footer() {
             <p className={styles.link}> <a  href="https://www.hackerrank.com/rabihutomo11">Hackerrank : rabihutomo11</a></p>
           </div>
 				</div>
-        <p className={styles.attr}>Created with 💖 in 🇮🇩</p>
+        <p className={styles.attr}>Created with 💖 by Rabih Utomo</p>
   		</div>
   	
   	)

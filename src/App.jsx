@@ -1,5 +1,7 @@
 import './App.css';
-
+import "aos/dist/aos.css";
+import AOS from 'aos';
+import { useEffect } from 'react';
 import Content from './components/content'
 import Footer from './components/footer'
 import Projects from './components/projects'
@@ -8,6 +10,11 @@ import Projects from './components/projects'
 
 
 function App() {
+	useEffect(() => {
+		AOS.init({
+			duration: 1500,
+		});
+	}, [])
   return (
 		<div>
 			<Content/>

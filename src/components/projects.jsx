@@ -1,9 +1,7 @@
 import { useState, useEffect } from "react";
-import AOS from 'aos';
-import "aos/dist/aos.css"
+import { ProjectsStyles as styles } from "../styles";
 
 import data from "./data.js";
-import styles from "./projects.module.css";
 import mark from "../assets/github.svg";
 import earth from "../assets/globe.svg";
 import close from "../assets/close.svg";
@@ -11,22 +9,16 @@ import close from "../assets/close.svg";
 const Anim = () => {
   const [modal, setModal] = useState({ show: false, desc: null, pic: [] });
 
-  useEffect(() => {
-    AOS.init({
-      duration : 2000
-    });
-  }, []);
-
   return (
     <>
       <div className={modal.show ? `${styles.back}` : styles.back}>
-        <h1 className={styles.title} data-aos="zoom-out-up">Projects</h1>
+        <h1 className={styles.title} data-aos="zoom-out-up">Few of My Project</h1>
         <div className={styles.container}>
           {data.projects.map((val) => {
             return (
               <>
               <div className={styles.cardContainer}>
-                <div className={styles.card} data-aos="zoom-in-down">
+                <div className={styles.card} data-aos="zoom-out-up">
                   <div
                     className={styles.text}
                     onClick={() =>
@@ -67,7 +59,7 @@ const Anim = () => {
       </div>
 
       {modal.show ? (
-        <>
+        <div onClick={() => setModal({ show: !modal.show })} className={styles.backdrop}>
           <div className={styles.modal} >
             <div onClick={() => setModal({ show: !modal.show })}>
               <img className={styles.close} src={close} alt="close" />
@@ -87,7 +79,7 @@ const Anim = () => {
 
             <p>{modal.desc}</p>
           </div>
-        </>
+        </div>
       ) : null}
     </>
   );

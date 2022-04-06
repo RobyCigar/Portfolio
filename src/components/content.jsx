@@ -1,10 +1,9 @@
 import { motion, useMotionValue, useSpring } from "framer-motion";
 import { useEffect } from "react";
-import AOS from "aos";
 import Typed from "react-typed";
-import "aos/dist/aos.css";
 
-import styles from "./content.module.css";
+
+import { ContentStyles as styles } from "../styles";;
 import html from "../assets/HTML.png";
 import css from "../assets/CSS.png";
 import js from "../assets/JS.png";
@@ -14,6 +13,7 @@ import tw from "../assets/TW.svg";
 import figma from "../assets/figma.png";
 import redux from "../assets/redux.svg";
 import ubuntu from "../assets/ubuntu.png"
+import typescript from "../assets/TS.png";
 
 export default function Content() {
 	const cursorX = useMotionValue(-100);
@@ -26,10 +26,6 @@ export default function Content() {
 	// Store the asset
 
 	useEffect(() => {
-		AOS.init({
-			duration: 700,
-		});
-
 		const moveCursor = (e) => {
 			cursorX.set(e.clientX - 16);
 			cursorY.set(e.clientY - 16);
@@ -41,6 +37,8 @@ export default function Content() {
 			window.removeEventListener("mousemove", moveCursor);
 		};
 	}, []);
+
+	console.log("here")
 
 	return (
 		<div>
@@ -63,11 +61,13 @@ export default function Content() {
 						<Typed
 							strings={[
 								"🖥 Interested in learning frontend technology.",
-								"✨ Usually do backend stuff with nodejs",
+								"✨ Usually do backend stuff with nodejs/laravel.",
 								"🔥 日本語を勉強しています。",
-								"🏃 I always do my best.",
+								"🏃 Open for work.",
+								"💪 I always do my best.",
+								`🤦 Single, 20y.o, 162cm`
 							]}
-							typeSpeed={40}
+							typeSpeed={35}
 							loop
 						/>
 					</p>
@@ -75,7 +75,7 @@ export default function Content() {
 			</div>
 
 			<div className={styles.container}>
-				<p className={styles.tools}>Tools</p>
+				<p className={styles.tools}>Most Used Tools</p>
 				<ul className={styles.ul}>
 					{assets.map((val, index) => (
 						<li key={index}>
@@ -112,10 +112,6 @@ const assets = [
 		img: rc
 	},
 	{
-		name: "Github",
-		img: gh
-	},
-	{
 		name: "Tailwind",
 		img: tw
 	},
@@ -130,5 +126,9 @@ const assets = [
 	{
 		name: "Ubuntu",
 		img: ubuntu
+	},
+	{
+		name: "Typescript",
+		img: typescript
 	}
 ]

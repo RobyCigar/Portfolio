@@ -35,23 +35,17 @@
 	padding: 80px 0;
 	box-shadow:  12px 12px 24px #0e0e0e,
              -12px -12px 24px #363636;
+
 	border-radius: 32px;
+	transition: opacity 200ms ease, background-color 300ms ease, box-shadow 300ms ease, transform 300ms ease, -webkit-transform 300ms ease !important;
+}
+
+.card:hover {
+	box-shadow: 0 4px 24px 0 rgba(174, 182, 189, 0.24);
 }
 
 .cardContainer {
-	-webkit-transition: all .2s ease-in;
-	   -moz-transition: all .2s ease-in;
-	    -ms-transition: all .2s ease-in;
-	     -o-transition: all .2s ease-in;
-	        transition: all .2s ease-in;
-}
-
-.cardContainer:hover {
-	-webkit-transform: translate( 0, -20px) !important;
-	   -moz-transform: translate( 0, -20px) !important;
-	    -ms-transform: translate( 0, -20px) !important;
-	     -o-transform: translate( 0, -20px) !important;
-	        transform: translate( 0, -20px) !important;
+	transition: all .25s cubic-bezier(0.16, 1, 0.3, 1);
 }
 
 .card > * {
@@ -81,6 +75,17 @@
 
 /* MODAL */
 
+.backdrop {
+	position: fixed;
+	display: flex;
+	-moz-box-align: center;
+	align-items: center;
+	-moz-box-pack: center;
+	justify-content: center;
+	background-color: rgba(0, 0, 0, 0.5);
+	inset: 0px;
+}
+
 .modal {
 	position: fixed;
 	top: 50%;
@@ -91,10 +96,11 @@
 	width: 90%;
 	margin: auto;
 	padding: 50px;
-	background: #DFCBF8;
+	background: var(--dark);
 	border-radius: 20px;
-	color: #0A0A0A;
+	color: white;
 	overflow: auto;
+
 	animation: pop 0.3s 1;
 	transition: all 1s cubic-bezier(0.16, 1, 0.3, 1);
 }
@@ -142,7 +148,7 @@
 }
 
 .close:hover {
-	transform: scale(1.4, 1.4);
+	transform: scale(1.1, 1.1);
 }
 
 
