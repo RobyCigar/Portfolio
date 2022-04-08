@@ -3,11 +3,7 @@
 	background: var(--dark);
 	color: white;
 	font-weight: 700;
-	-webkit-transition: all .25s ease-in;
-	   -moz-transition: all .25s ease-in;
-	    -ms-transition: all .25s ease-in;
-	     -o-transition: all .25s ease-in;
-	        transition: all .25s ease-in;
+    transition: all .25s ease-in;
 }
 
 .title {

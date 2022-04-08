@@ -60,13 +60,13 @@ export default function Content() {
 						<Typed
 							strings={[
 								"🖥 Interested in learning frontend technology.",
-								"✨ Usually do backend stuff with nodejs/laravel.",
+								"✨ Usually do basic backend stuff with nodejs/laravel.",
 								"🔥 日本語を勉強しています。",
-								"🏃 Open for work.",
+								"😿 我不太擅长说中文",
 								"💪 I always do my best.",
 								`🤦 Single, 20y.o, 162cm`
 							]}
-							typeSpeed={35}
+							typeSpeed={30}
 							loop
 						/>
 					</p>
