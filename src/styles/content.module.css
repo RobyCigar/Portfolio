@@ -77,11 +77,25 @@
 }
 
 .par {
+	position: relative;
 	margin-top: 35px;
 	font-family: Questrial;
-	text-align: center;
 	font-size: 18px;
 	line-height: 2rem;
+	min-width: 800px;
+}
+/* Switcher */
+
+p[role="item"] {
+  inset: 0px auto auto 50%;
+  position: absolute;
+  opacity: 0;
+  transition: opacity 1s ease-out;
+  transform: translateX(-50%);
+}
+
+p[class="active"] {
+  opacity: 1;
 }
 
 /* Stack */

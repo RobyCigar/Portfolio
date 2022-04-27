@@ -1,5 +1,5 @@
 import { motion, useMotionValue, useSpring } from "framer-motion";
-import { useEffect } from "react";
+import { useEffect, useRef } from "react";
 import Typed from "react-typed";
 
 
@@ -15,6 +15,7 @@ const assets = ['/HTML.png',
 	'/ubuntu.png', '/TS.png']
 
 export default function Content() {
+	const itemsRef = useRef([]);
 	const cursorX = useMotionValue(-100);
 	const cursorY = useMotionValue(-100);
 
@@ -31,6 +32,23 @@ export default function Content() {
 		};
 
 		window.addEventListener("mousemove", moveCursor);
+
+		let p = itemsRef.current;
+
+		setInterval(() => {
+			p.some((el, idx) => {
+
+				if (el.className === "active") {
+					p[idx].className = ""
+					p[idx + 1] ? p[idx + 1].className = "active" : null;
+					console.log(idx)
+					return true
+				} else if (idx === p.length - 2) {
+					p[0].className = "active"
+				}
+
+			})
+		}, 2500)
 
 		return () => {
 			window.removeEventListener("mousemove", moveCursor);
@@ -57,18 +75,12 @@ export default function Content() {
 						<span className={styles.flag}>🇮🇩</span>
 					</p>
 					<p className={styles.par}>
-						<Typed
-							strings={[
-								"🖥 Interested in learning frontend technology.",
-								"✨ Usually do basic backend stuff with nodejs/laravel.",
-								"🔥 日本語を勉強しています。",
-								"😿 我不太擅长说中文",
-								"💪 I always do my best.",
-								`🤦 Single, 20y.o, 162cm`
-							]}
-							typeSpeed={30}
-							loop
-						/>
+						<p role="item" ref={el => itemsRef.current[0] = el} className={`${styles.p} active`}>🖥 Interested in learning frontend tech.</p>
+						<p role="item" ref={el => itemsRef.current[1] = el}>✨ Usually do basic backend with node/laravel.</p>
+						<p role="item" ref={el => itemsRef.current[2] = el}>🔥 日本語を勉強しています。</p>
+						<p role="item" ref={el => itemsRef.current[3] = el}>💪 I also learn a little bit 中文 btw.</p>
+						<p role="item" ref={el => itemsRef.current[4] = el}>😿 Want to be good at CP but still sucks. :(</p>
+						<p role="item" ref={el => itemsRef.current[5] = el}>I always do my best.</p>
 					</p>
 				</div>
 			</div>
