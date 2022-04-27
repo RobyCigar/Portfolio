@@ -41,7 +41,6 @@ export default function Content() {
 				if (el.className === "active") {
 					p[idx].className = ""
 					p[idx + 1] ? p[idx + 1].className = "active" : null;
-					console.log(idx)
 					return true
 				} else if (idx === p.length - 2) {
 					p[0].className = "active"
@@ -55,7 +54,6 @@ export default function Content() {
 		};
 	}, []);
 
-	console.log("here")
 
 	return (
 		<div>

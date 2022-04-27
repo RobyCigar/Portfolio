@@ -143,6 +143,10 @@ p[class="active"] {
 		font-size: 45px;
 	}
 
+	.par {
+		display: none;
+	}
+
 	.cursor {
 		display: none;
 	}

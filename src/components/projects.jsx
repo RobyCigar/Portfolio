@@ -14,8 +14,8 @@ const Anim = () => {
           {data.projects.map((val) => {
             return (
               <>
-              <div className={styles.cardContainer}>
-                <div className={styles.card} data-aos="zoom-out-up">
+                <div className={styles.cardContainer} data-aos="zoom-out-up" data-aos-duration="2000">
+                  <div className={styles.card} >
                   <div
                     className={styles.text}
                     onClick={() =>

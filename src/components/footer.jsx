@@ -6,6 +6,10 @@ function Footer() {
   		<div className={styles.container}>
   			<div className={styles.title}>Get in touch</div>
   			<div className={styles.socmed}>
+          <div>
+            <img src="assets/twitter.svg" alt="my svg link" />
+            <p className={styles.link}> <a target="_blank" href="https://twitter.com/robycigar">Twitter</a></p>
+          </div>
 					<div>
             <img src="assets/Insta.svg" alt="Instagram"/>
             <p className={styles.link}><a target="_blank" href="https://instagram.com/rabih3.1415">Instagram</a></p>
