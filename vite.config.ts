@@ -13,6 +13,7 @@ export default defineConfig({
     plugins: [
         react(),
         // reactRefresh(),
+        // @ts-expect-error ts-migrate(2554) FIXME: Expected 0 arguments, but got 1.
         svgrPlugin({
             svgrOptions: {
                 icon: true,

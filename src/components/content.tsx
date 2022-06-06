@@ -1,9 +1,9 @@
 import { motion, useMotionValue, useSpring } from "framer-motion";
 import { useEffect, useRef } from "react";
+import ReactTyped from "react-typed";
 import Typed from "react-typed";
-
-
 import { ContentStyles as styles } from "../styles";;
+
 const assets = ['/HTML.png',
 	'/CSS.png',
 	'/JS.png',
@@ -15,7 +15,7 @@ const assets = ['/HTML.png',
 	'/ubuntu.png', '/TS.png']
 
 export default function Content() {
-	const itemsRef = useRef([]);
+	const itemsRef = useRef<HTMLParagraphElement[] | null[]>([]);
 	const cursorX = useMotionValue(-100);
 	const cursorY = useMotionValue(-100);
 
@@ -26,17 +26,17 @@ export default function Content() {
 	// Store the asset
 
 	useEffect(() => {
-		const moveCursor = (e) => {
+		const moveCursor = (e: any) => {
 			cursorX.set(e.clientX - 16);
 			cursorY.set(e.clientY - 16);
 		};
 
 		window.addEventListener("mousemove", moveCursor);
 
-		let p = itemsRef.current;
+		let p: any = itemsRef.current;
 
 		setInterval(() => {
-			p.some((el, idx) => {
+			p.some((el: any, idx: any) => {
 
 				if (el.className === "active") {
 					p[idx].className = ""
@@ -64,7 +64,6 @@ export default function Content() {
 					translateY: cursorYSpring,
 				}}
 			/>
-
 			<div className={styles.profile}>
 				<div className={styles.textContainer} data-aos="fade-left">
 					<p className={`${styles.jumbo} ${styles.gradient}`}>Hi, call me Roby</p>
@@ -86,7 +85,7 @@ export default function Content() {
 			<div className={styles.container}>
 				<p className={styles.tools}>Tools</p>
 				<ul className={styles.ul} data-aos="zoom-out-up">
-					{assets.map((val, index) => (
+					{assets.map((val, index) =>  
 						<li key={index}>
 							<img
 								className={styles.icon}
@@ -95,7 +94,8 @@ export default function Content() {
 								title={val}
 							/>
 						</li>
-					))}
+					
+					)}
 				</ul>
 			</div>
 		</div>
