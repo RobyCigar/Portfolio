@@ -1,7 +1,5 @@
 import { motion, useMotionValue, useSpring } from "framer-motion";
 import { useEffect, useRef } from "react";
-import ReactTyped from "react-typed";
-import Typed from "react-typed";
 import { ContentStyles as styles } from "../styles";;
 
 const assets = ['/HTML.png',
@@ -77,7 +75,7 @@ export default function Content() {
 						<p role="item" ref={el => itemsRef.current[2] = el}>🔥 日本語を勉強しています。</p>
 						<p role="item" ref={el => itemsRef.current[3] = el}>💪 I also learn a little bit 中文 btw.</p>
 						<p role="item" ref={el => itemsRef.current[4] = el}>😿 Want to be good at CP but still sucks. :(</p>
-						<p role="item" ref={el => itemsRef.current[5] = el}>I always do my best.</p>
+						<p role="item" ref={el => itemsRef.current[5] = el}>👊 I always do my best.</p>
 					</p>
 				</div>
 			</div>
