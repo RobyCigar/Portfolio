@@ -3,8 +3,10 @@ import { FooterStyles as styles } from "../styles";
 function Footer() {
   return (
     <div className={styles.container}>
-      <div className={styles.title}>Get in touch</div>
-      <div className={styles.socmed}>
+      <div className={styles.title} data-aos="zoom-out-up">
+        Other Portfolio
+      </div>
+      <div className={styles.socmed} data-aos="zoom-out-up">
         <div>
           <img src="assets/twitter.svg" alt="my svg link" />
 
@@ -21,28 +23,6 @@ function Footer() {
           <p className={styles.link}>
             <a target="_blank" href="https://instagram.com/rabih3.1415">
               Instagram
-            </a>
-          </p>
-        </div>
-        <div>
-          <img src="assets/github.svg" alt="github" />
-
-          <p className={styles.link}>
-            <a target="_blank" href="https://github.com/Robycigar">
-              Github
-            </a>
-          </p>
-        </div>
-        <div>
-          <img src="assets/linkedin.svg" alt="linkedin" />
-
-          <p className={styles.link}>
-            {" "}
-            <a
-              target="_blank"
-              href="https://www.linkedin.com/in/rabih-utomo-36955a1b9/"
-            >
-              Linkedin
             </a>
           </p>
         </div>
