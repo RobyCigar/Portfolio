@@ -91,7 +91,7 @@ export default function Content() {
                 🖥 Interested in learning frontend tech.
               </p>
               <p role="item" ref={(el) => (itemsRef.current[1] = el)}>
-                ✨ Usually do basic backend with node/laravel.
+                ✨ Usually do basic backend with laravel.
               </p>
               <p role="item" ref={(el) => (itemsRef.current[2] = el)}>
                 🔥 日本語を勉強しています。
@@ -149,9 +149,9 @@ export default function Content() {
       </div>
 
       <div className={styles.container}>
-        <p className={styles.tools} data-aos="zoom-out-up">
+        <h2 className="title" data-aos="zoom-out-up">
           Main Tools
-        </p>
+        </h2>
         <ul className={styles.ul} data-aos="zoom-out-up">
           {assets.map((val, index) => (
             <li key={index}>

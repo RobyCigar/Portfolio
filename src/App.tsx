@@ -5,7 +5,7 @@ import { useEffect } from 'react';
 import Content from './sections/content'
 import Footer from './sections/footer'
 import Projects from './sections/projects'
-
+import Timeline from './sections/timeline';
 
 
 
@@ -19,6 +19,7 @@ function App() {
 	<>
 		<Content/>
 		<Projects/>
+		<Timeline/>
 		<Footer/>
 	</>
   );

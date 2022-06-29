@@ -42,7 +42,7 @@ let data = {
 		{
 			"title": "Mental Math",
 			"tech": ["react-native", "expo"],
-			"desc": "This is my first project with React Native, the main idea of this project is just to implement tutorial that i've learn with my own ideas. Mental Math is just a simple Arithmethic Game apps that can be play in both android and iOS. The rule of this game is simple, the question comes up and user answer the number. The unique part of this game is that the user does not allowed taking the calculator. 😆",
+			"desc": "This is my first project with React Native, the main idea of this project is just to implement tutorial that i've learn with my own ideas. Mental Math is just a simple Arithmethic Game apps that can be play in both android and iOS. Mental math is a well known game in math that the user does not allowed taking the calculator for the calculation. 😆",
 			"link": {
 				"github": "https://github.com/RobyCigar/mental-math"
 			},

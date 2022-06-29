@@ -15,7 +15,7 @@ const Anim = () => {
   return (
   <>
     <div className={modal.show ? `${styles.back}` : styles.back}>
-      <h1 className={styles.title} data-aos="zoom-out-up">Featured Projects</h1>
+      <h2 className="title" data-aos="zoom-out-up">Featured Projects</h2>
       <div className={styles.container}>
         {data.projects.map((val) => {
           return (

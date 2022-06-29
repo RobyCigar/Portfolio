@@ -48,7 +48,7 @@ function Footer() {
         </div>
       </div>
 
-      <p className={styles.attr}>Created with 💖 by Rabih Utomo</p>
+      <p className={styles.attr}>Created with 💖 by @Robycigar</p>
     </div>
   );
 }
