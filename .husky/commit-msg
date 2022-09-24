@@ -1,0 +1,5 @@
+#!/bin/sh
+. "\$(dirname "\$0")/.husky/_/husky.sh"
+
+npx --no -- commitlint --edit ${1}
+
